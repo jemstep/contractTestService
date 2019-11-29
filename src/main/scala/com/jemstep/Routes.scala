@@ -32,7 +32,7 @@ object Routes {
 
     def hello(name: String): Json =
       json"""{"hello": $name}"""
-    val greeting = hello("worldword")
+    val greeting = hello("world")
 
     implicit val HelloEncoder: Encoder[Hello] =
       Encoder.instance { hello: Hello =>
