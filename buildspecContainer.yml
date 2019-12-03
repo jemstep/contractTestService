@@ -6,9 +6,7 @@ phases:
       docker: 18
   build:
     commands:
-      - ls
-      - ls
-      - ls
+      - chmod +x export_container_and_upload
       - ./export_container_and_upload
 artifacts:
   files:
