@@ -6,7 +6,10 @@ phases:
       docker: 18
   build:
     commands:
-       - ./export_container_and_upload
+      - ls
+      - ls
+      - ls
+      - ./export_container_and_upload
 artifacts:
   files:
     - 'microservice.tar'
