@@ -9,4 +9,4 @@ artifacts:
     - 'microservice.jar'
     - 'buildspec.yml'
     - 'dockerfile'
-    - 'export_contianer_and_upload'
+    - 'export_container_and_upload'
