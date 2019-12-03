@@ -1,7 +1,7 @@
 
 name := "microService"
 
-version := "0.1"
+version := "0.0.1"
 
 val CatsVersion = "2.0.0"
 val ZioVersion = "1.0.0-RC17"

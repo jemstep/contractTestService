@@ -2,6 +2,8 @@ target
 *.class
 *.iml
 *.iws
+*.jar
+*.tar
 .idea
 out
 target/*

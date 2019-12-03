@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - ./compile_test_and_assemble_jar
+artifacts:
+  files:
+    - 'microservice.jar'
+    - 'buildspec.yml'
+    - 'dockerfile'

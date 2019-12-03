@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+docker build -t microservice .
+docker run -d --name microservice -p 8082:8082 microservice
+docker export microservice > microservice.tar

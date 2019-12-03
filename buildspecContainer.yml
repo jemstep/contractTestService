@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - ./export_container_and_upload
+artifacts:
+  files:
+    - 'microservice.tar'

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+rm -rf target
+sbt compile assembly
+cp target/scala-2.13/microService-assembly-0.0.1.jar microservice.jar
+rm -rf target
+docker build -t microservice .
+docker run -d --name microservice -p 8082:8082 microservice
