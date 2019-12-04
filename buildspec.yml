@@ -10,4 +10,3 @@ artifacts:
     - 'buildspec.yml'
     - 'dockerfile'
     - 'export_container_and_upload'
-    - 'imagedefinitions.json'
