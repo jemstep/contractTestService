@@ -37,7 +37,7 @@ object Server {
 
   def hostServer: fs2.Stream[Task, ExitCode] = {
     BlazeServerBuilder[Task]
-      .bindHttp(8082, "0.0.0.0")
+      .bindHttp(8080, "0.0.0.0")
       .withHttpApp(createApp)
       .serve
   }

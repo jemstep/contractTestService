@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 docker build -t microservice .
-docker run -d --name microservice -p 8082:8082 microservice
+docker run -d --name microservice -p 8080:8080 microservice
 docker export microservice > microservicecontainer.tar
 docker save microservice > microserviceimage.tar

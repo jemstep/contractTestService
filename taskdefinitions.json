@@ -1,0 +1,19 @@
+{
+  "family": "microservice",
+  "containerDefinitions": [
+    {
+      "name": "microservice",
+      "image": "414859076884.dkr.ecr.us-west-1.amazonaws.com/microservice:latest",
+      "cpu": 100,
+      "portMappings": [
+        {
+          "protocol": "tcp",
+          "containerPort": 8082,
+          "hostPort": 8082
+        }
+      ],
+      "memory": 128,
+      "essential": true
+    }
+  ]
+}
