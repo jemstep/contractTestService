@@ -8,8 +8,8 @@
       "portMappings": [
         {
           "protocol": "tcp",
-          "containerPort": 8082,
-          "hostPort": 8082
+          "containerPort": 8080,
+          "hostPort": 8080
         }
       ],
       "memory": 128,
