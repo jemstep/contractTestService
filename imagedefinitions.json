@@ -1,6 +1,6 @@
 [
   {
-    "name": "microservice",
-    "imageUri": "microservice"
+    "name": "microservicecontainer",
+    "imageUri": "microserviceimage"
   }
 ]

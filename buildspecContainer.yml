@@ -13,5 +13,6 @@ phases:
       - ./export_container_and_upload
 artifacts:
   files:
-    - 'microservice.tar'
+    - 'microserviceimage.tar'
+    - 'microservicecontainer.tar'
     - 'imagedefinitions.json'

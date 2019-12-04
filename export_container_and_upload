@@ -2,4 +2,5 @@
 
 docker build -t microservice .
 docker run -d --name microservice -p 8082:8082 microservice
-docker export microservice > microservice.tar
+docker export microservice > microservicecontainer.tar
+docker save microservice > microserviceimage.tar
