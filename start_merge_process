@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+#Use case is the same as git push with a commit message
+
+//Squash
