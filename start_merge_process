@@ -4,3 +4,42 @@
 #Use case is the same as git push with a commit message
 
 //Squash
+Squash to 1 commit.
+
+git rebase -i HEAD~[NUMBER OF COMMITS]
+
+OR
+
+git rebase -i [SHA]
+
+If you have previously pushed your code to a remote branch, you will need to force push.
+
+git push origin branchName --force
+
+Checkout master branch
+
+git checkout master
+
+Pull master branch
+
+git pull origin master
+
+Checkout bug/feature branch
+
+git checkout branchName
+
+Rebase from master
+
+git rebase master
+
+Handle any conflicts and make sure your code builds and all tests pass. Force push branch to remote.
+
+git push origin branchName --force
+
+Checkout, merge, and push into master
+
+git checkout master
+
+git merge branchName
+
+git push origin master
