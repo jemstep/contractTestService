@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+
+cp git-create-pull-request /opt/jemstep/bin/git-create-pull-request
+
+
+#Check if "access-token-github" exists in /home/{user}/.ssh
+FILE=~/.ssh/access_token_github
+if test -f "$FILE"; then
+    echo "$FILE exist"
+else
+    #if not instruct user on how to create access token
+    echo "Please go to github create an access token and paste it in $FILE"
+fi
+
+#Check if "git-create-pull-request" exists in /usr/bin
+FILE=/usr/bin/git-create-pull-request
+if test -f "$FILE"; then
+    echo "$FILE exist"
+else
+    #if it doesn't copy file to there
+    cp git-create-pull-request /opt/jemstep/bin/git-create-pull-request
+    echo "$FILE copied successfully"
+fi

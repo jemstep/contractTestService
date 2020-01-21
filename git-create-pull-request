@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "This command assumes you have pushed your commits to the origin of the brunch that you are currently on and want\
+ to create a pull request for"
+source ~/.ssh/access_token_github
+auth_prefix="Authorization: token "
+auth_token="$auth_prefix$access_token_github"
+curl --data '{"title":"testrepo","base":"master","head":"newBranch"}' \
+        -X POST \
+        -H "$auth_token"\
+         https://api.github.com/repos/ogdenm/microService/pulls

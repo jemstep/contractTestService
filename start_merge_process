@@ -3,9 +3,9 @@
 
 #Use case is the same as git push with a commit message
 
-//Squash
-Squash to 1 commit.
 
+
+//Squash
 git rebase -i HEAD~[NUMBER OF COMMITS]
 
 OR
@@ -43,3 +43,12 @@ git checkout master
 git merge branchName
 
 git push origin master
+
+#Check if a pull request already exists
+
+#if it does bail out
+
+# if it doesn't: Create Pull Request
+curl --data '{"title":"newBranch","base":"master","head":"newBranch","body":"Please merge this"}' -X POST -H "Authorization: token 52ea25efb1d61a778e378afd2934dcc98dcecde6" https://api.github.com/repos/ogdenm/microService/pulls
+
+#if the pull request successed
