@@ -40,7 +40,7 @@ object HelloWorld {
 
 object MainTest extends DefaultRunnableSpec(
   suite("A started Main")(
-    testM("should be healthy") {
+    testM("should be healthier") {
       for {
         _      <- sayHello
         output <- TestConsole.output
