@@ -49,6 +49,6 @@ git push origin master
 #if it does bail out
 
 # if it doesn't: Create Pull Request
-curl --data '{"title":"newBranch","base":"master","head":"newBranch","body":"Please merge this"}' -X POST -H "Authorization: token 52ea25efb1d61a778e378afd2934dcc98dcecde6" https://api.github.com/repos/ogdenm/microService/pulls
+curl --data '{"title":"newBranch","base":"master","head":"newBranch","body":"Please merge this"}' -X POST -H "Authorization: token {token}" https://api.github.com/repos/ogdenm/microService/pulls
 
 #if the pull request successed
