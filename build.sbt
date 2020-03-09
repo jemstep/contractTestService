@@ -46,7 +46,6 @@ lazy val root = (project in file("."))
       "org.http4s" %% "http4s-blaze-client" % Http4sVersion,
       "ch.qos.logback" % "logback-classic" % LogbackVersion,
       "io.circe" %% "circe-generic" % CirceVersion,
-      "org.scalatest" % "scalatest_2.12" % scalatestVersion,
       "com.softwaremill.sttp" %% "core" % sttpVersion,
     ),
     testFrameworks ++= Seq(new TestFramework("zio.test.sbt.ZTestFramework")),

@@ -31,7 +31,7 @@ import main.scala.com.jemstep.Main
 
 object HelloWorld {
   def sayHello: ZIO[Console, Nothing, Unit] = {
-    val request = basicRequest.get(uri"localhost:8082")
+    val request = basicRequest.get(uri"localhost:8080")
     implicit val backend = HttpURLConnectionBackend()
     val response = request.send()
     console.putStrLn(response.body.toString)
@@ -44,7 +44,11 @@ object MainTest extends DefaultRunnableSpec(
       for {
         _      <- sayHello
         output <- TestConsole.output
-      } yield assert(output, equalTo(Vector(Right(json"""{"hello":"world"}"""))))
+      } yield assert(output, equalTo(Vector(Right(
+
+                json"""{
+              "hello":"world"
+                      }"""))))
     }
   )
 ) {
